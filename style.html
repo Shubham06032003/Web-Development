@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'courier new';
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-size: larger;
+            font-weight: bolder;
+            
+        
+        }
+        a{
+            position: relative;
+            background-color:aqua ;
+            color: orangered;
+            width: 80px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            box-shadow: 0 20px 25px rgba(0, 255, 255, 0.756);
+            overflow: hidden;
+            text-decoration: none;
+            letter-spacing: 0.1em;
+        }
+        a:hover{
+            width: 250px;
+            transition-delay: 00.5s;
+        }
+        a::before{
+            content: '';
+            position: absolute;
+            right: 25px;
+            width: 12px;
+            height: 10px;
+            border-top: 3px solid red;
+            border-right: 3px solid red;
+            transform: rotate(45deg);
+            transition: 00.5s;
+        }
+        a:hover::before{
+            transform: rotate(45deg) translate(50px,-50px);
+        }
+        a::after{
+            content: '';
+            position: absolute;
+            left: -50px;
+            right: 25px;
+            width: 12px;
+            height: 10px;
+            border-top: 3px solid red;
+            border-right: 3px solid red;
+            transform: rotate(45deg) translate(-50px,50px);
+            transition: 00.5s;
+        }
+        a:hover::after{
+            transform: rotate(45deg) translate(50px,-50px);
+            transition-delay: 0.8s;
+        }
+        a span{
+            visibility: hidden;
+            opacity: 0;
+            white-space: nowrap;
+            transition: 00.5s;
+            text-transform: uppercase;
+            transform: translateX(-30px);
+        }
+        a:hover span{
+            visibility: visible;
+            opacity: 1;
+            transition-delay: 0.75s;
+            transform: translateX(10px);
+        }
+    </style>
+</head>
+<body>
+    <a href="#"><span>Let's Started</span></a>
+</body>
+</html>

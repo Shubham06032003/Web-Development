@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise for Array</title>
+</head>
+<body>
+    <script>
+        const characters = [
+            {
+                name : "Tarak Metha",
+                height : '172',
+                mass : '77',
+                eye_color : 'brown',
+                gender : 'male'
+            },
+            {
+                name : "Jethalal",
+                height : '145',
+                mass : '136',
+                eye_color : 'black',
+                gender : 'male'
+            },
+            {
+                name : "Babita Ji",
+                height : '150',
+                mass : '49',
+                eye_color : 'grey',
+                gender : 'female'
+            },
+            {
+                name : "Krishnan Iyer",
+                height : '168',
+                mass : '84',
+                eye_color : 'black',
+                gender : 'male'
+            },
+        ];
+
+        // Q1 Get an Array of all name
+
+        // const names = characters.map(ch => ch.name);
+        // console.log(names);
+
+        // Q get an array of objects with just names and height properties
+
+        // const propertiesofch = characters.map(ch =>{
+        //   return{
+        //     name : ch.name,
+        //     height : ch.height 
+        //   }  
+        // })
+        // console.log(propertiesofch);
+
+        // Q get the total height of all characters
+
+        const totalheight = characters.reduce((prevheight,character) => {
+            return pervheight + Number(character.height);
+        },0);
+        console.log(totalheight)
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h1:hover{
+            text-decoration: underline;
+        }
+        form{
+            border: 2px solid black;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        textarea{
+            width: 400px;
+            margin-left: 500px;
+        }
+        #Address{
+            margin: 0;
+            margin-left: 150px;
+        }
+        #btn{
+            margin: 10px;
+            margin-left: 600px;
+            width: 100px;
+        }
+        .btn{
+            margin: 10px;
+            /* margin-left: 600px; */
+            width: 100px;
+        }
+        #Adrs{
+            padding-right: 190px;
+            text-align: center;
+            margin: 0;
+        }
+        form .btn{
+            display: flex;
+            flex-direction: row;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Contect Us</h1>
+    <form action="">
+        <p id="parent">Name: <input type="text" name="name" id="name"  placeholder="Enter Name" required>
+        </p>
+        <p id="parent1">
+            Email : <input type="email" name="Email" id="Email" placeholder="Enter Email" required>
+        </p>
+        <p id="numpad">
+            Phone Number : <input type="number" name="PNo" id="PNo" placeholder="Enter Phone Number">
+        </p>
+        <div>
+           <p id="Adrs">Address:</p> 
+           <textarea name="Address" id="Address" placeholder="Enter Address" cols="30" rows="5"></textarea>
+        </div>
+        <textarea name="msg" id="msg" placeholder="Type your Message Here" cols="30" rows="10"></textarea>
+        <div class="btn">
+            <input type="submit" value="Submit" id="btn">
+            <input type="reset" value="Reset" class="btn">
+        </div>
+
+    </form>
+    <script src="College4.js"></script>
+</body>
+</html>

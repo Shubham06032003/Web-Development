@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Form</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        samp{
+            padding: 10px,10px;
+            align-items: center;
+            border: 3px solid lime;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <samp>Exam Form</samp>
+        <h4>Registration type : <select name="r_type" id="r_type" required>
+            <option value="">-- Registration Year --</option>
+            <option value="Regular"></option>
+            <option value="Private"></option>
+        </select></h4>
+        <h4>Name : <input type="text" name="Name" id="Name" placeholder="-- Enter your Name --" required></h4>
+        <h4>Year :  <select name="year" id="year">
+            <option value="">-- Enter your year --</option>
+            <option value="1st year">1st year</option>
+            <option value="2nd year">2nd year</option>
+            <option value="3rd year">3rd year</option>
+        </select></h4>
+        <h4>Registration Number : <input type="number" name="r_no" id="r_no" placeholder="Enter your Registration Number" required></h4>
+        <fieldset>
+            <legend>Gender : </legend>
+            <h4> <input type="radio" name="male" id="male">Male
+        <br><input type="radio" name="female" id="female">Female</h4>
+    </fieldset>
+    <h4>E-mail : <input type="email" name="email" id="email" placeholder="-- Enter your E-mail --" required></h4>
+    <h4>Mobile Number : <input type="number" name="mobile" id="mobile"></h4>
+    <h4>Address : <textarea name="address" id="address" cols="30" rows="15"></textarea></h4>
+    <h4>Photo : <input type="file" name="photo" id="photo" required></h4>
+    </form>
+</body>
+</html>

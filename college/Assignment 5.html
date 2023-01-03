@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <title>Assignment 5</title>
+    <style>
+        *{
+            margin: 5px;
+            font-family: 'Marck Script', cursive;
+        }
+        .last{
+            /* margin: 50px; */
+            padding: 10px;
+            background-color: rgb(183, 181, 181);
+        }
+        .Seclast{
+            background-color: azure;
+        }
+        h1
+        {
+            background-color: aquamarine;
+            padding: 5px;
+            width: 300px;
+            text-align: justify;
+        }
+        .bodypart{
+            border: 2px solid aqua;
+        }
+        .part{
+            display: flex;
+        }
+        nav{
+            border-bottom: 2px solid aqua;
+        }
+        .name{
+            width: 800px;
+            font-size: 20px;
+        }
+        .nameDiv{
+            background-color: rgb(183, 181, 181);
+        }
+        button{
+            background-color: white;
+            border-radius: 50%;
+        }
+        .b1:hover{
+           background-image: url("../save_FILL.png");
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: contain;
+        }
+        .b1:hover img{
+            opacity: 0;
+        }
+        .b2:hover{
+           background-image: url("../visibility_off_FILL.png");
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: contain;
+        }
+        .b2:hover img{
+            opacity: 0;
+        }
+        .b3:hover{
+           background-image: url("../visibility_FILL.png");
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: contain;
+        }
+        .b3:hover img{
+            opacity: 0;
+        }
+        .sec{
+            padding-left: 20px;
+            font-size: 23.42px;
+            text-indent: 20px;
+            /* word-spacing: 2px; */
+            font-weight: bold;
+        }
+        select{
+            font-weight: bold;
+            width: 120px;
+            font-size: 16px;
+        }
+        .set{
+            display: flex;
+            font-size: 20px;
+            font-weight: bold̥̥;
+        }
+    </style>
+</head>
+<body>
+    <div class="last">
+        <div class="Seclast">
+            <h1>
+                Settings
+            </h1>
+            <div class="bodypart">
+                <nav>
+                    <button class="b1">
+                        <img src="../save.png" alt="This is an Image">
+                    </button>
+                    <button class="b2">
+                        <img src="../visibility_off.png" alt="This is an Image">
+                    </button>
+                    <button class="b3">
+                        <img src="../visibility.png" alt="This is an Image">
+                    </button>
+                    <button>
+                        <img src="../undo.png" alt="This is an Image">
+                    </button>
+                    <button>
+                        <img src="../redo.png" alt="This is an Image">
+                    </button>
+                </nav>
+                <div class="nameDiv">
+                    <input class="name" type="text" name="text" id="text" placeholder="Compony name">
+                </div>
+                <div class="part">
+                    <div>
+                        <h2>
+                            Available Form:
+                        </h2>
+                        <input type="checkbox" name="radio" id="radio">
+                            Not Set
+                        <h2>
+                            Due Date:
+                        </h2>
+                        <input type="checkbox" name="radio" id="radio">
+                            Not Set
+                        <h2>
+                            Allow late Submission:
+                        </h2>
+                        <input disabled type="checkbox" name="radio" id="radio">
+                            Deduct
+                        <select disabled name="%fee" id="%fee">
+                            <option value="">0</option>
+                            <option value="">25</option>
+                            <option value="">50</option>
+                            <option value="">75</option>
+                            <option value="">100</option>
+                        </select>
+                            % of the remaining
+                            <p>
+                                possible points per day late.
+                            </p>
+                        <div class="set">
+                            <p>
+                                Points Possible:
+                            </p>
+                            <select name="points" id="points">
+                                <option value="">100</option>
+                                <option value="">200</option>
+                                <option value="">300</option>
+                                <option value="">400</option>
+                                <option value="">500</option>
+                            </select>
+                        </div>
+                        <div class="set">
+                            <p>
+                                Grade Category:
+                            </p>
+                            <select name="GradeCat" id="GradeCat">
+                                <option value="">Grade</option>
+                                <option value="">Division</option>
+                            </select>
+                        </div>
+                        <h2>
+                            Description:
+                        </h2>
+                        <textarea name="Description" id="Description" cols="50" rows="10"></textarea>
+                    </div>
+                    <div class="sec">
+                        <h2>
+                            Policies:
+                        </h2>
+                        <select name="Worktype" id="Worktype">
+                            <option value="">Homework</option>
+                            <option value="">Prectice</option>
+                            <option value="">Prectice Test</option>
+                            <option value="">Test</option>
+                            <option value="">Costom ...</option>
+                        </select>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, cumque.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa officiis praesentium quisquam provident suscipit facilis obcaecati reiciendis porro laboriosam nam?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa officiis praesentium quisquam provident suscipit facilis obcaecati reiciendis porro laboriosam nam?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa officiis praesentium quisquam provident suscipit facilis obcaecati reiciendis porro laboriosam nam?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa officiis praesentium quisquam provident suscipit facilis obcaecati reiciendis porro laboriosam nam?
+                        </p>
+                        <input type="checkbox" name="Feedback" id="Feedback">
+                        Show Feedback
+                        <br>
+                        <input type="checkbox" name="Feedback" id="Feedback">
+                        Show Periodic Table
+                        <br>
+                        <input type="checkbox" name="Feedback" id="Feedback">
+                        Show Calculator
+                        <br>
+                        <input type="checkbox" name="Feedback" id="Feedback">
+                        Print
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

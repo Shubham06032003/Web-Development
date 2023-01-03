@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navBar{
+    width: 1300px;
+    position: fixed;
+    display: flex;
+    background-color: black;
+}
+.navBar li{
+    list-style: none;
+}
+.navBar li a{
+    color: white;
+    padding: 10px;
+    padding-left: 150px;
+    text-decoration: none;
+}
+.p{
+    display: flex;
+    border: 11px solid black;
+}
+.p p{
+    display: flex;
+    /* border: 5px solid black;
+     */
+     font-family: cursive;
+     padding-left: 10px;
+     font-size: 25px;
+     font-weight: bolder;
+    color: gold;
+    background: linear-gradient(to bottom,darkblue,black);
+    text-shadow: 2px 5px 5px lime;
+
+}

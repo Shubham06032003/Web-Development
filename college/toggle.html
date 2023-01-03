@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 20px;
+            display: block;
+        }
+        .sec img{
+            display: flexbox;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" name="pswd" value="This is a textBox" id="pswd">
+        <button id="btn" onclick="show()">hide</button>
+    </div>
+    <div class="sec">
+        <img src="../Amazoncom.png" alt="Amazon Image" id="img">
+        <button id="btn2" onclick="showImg()">hide</button>
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        let txt = document.getElementById("pswd");
+        function show(){
+            if(btn.textContent.includes("hide")){
+                txt.style.visibility = "hidden";
+                btn.textContent="visible";
+                console.log(btn.textContent);
+            }
+            else{
+                txt.style.visibility="visible";
+                btn.textContent="hide";
+                console.log(btn.textContent);
+            }
+
+        }
+        let img = document.getElementById("img");
+        let btn2 = document.getElementById("btn2");
+        function showImg(){
+            if(btn2.textContent.includes("hide")){
+                img.style.visibility = "hidden";
+                btn2.textContent="visible";
+                console.log(btn.textContent);
+            }
+            else{
+                img.style.visibility="visible";
+                btn2.textContent="hide";
+                console.log(btn.textContent);
+            }
+
+        }
+    </script>
+</body>
+</html>

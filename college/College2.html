@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test js</title>
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            margin: 10px;
+            margin-left: 100px;
+            width: 90px;
+        }
+    </style>
+    <!-- <script>
+        function headMsg(){
+            alert("Hello JavaScript! from head");
+        }
+    </script> -->
+</head>
+<body>
+    <div>
+        <img id="bulbimg" src="/bulb off.jpg" alt="bulb Image" width="300px" height="200px">
+        <button onclick="changeImg()" id="btn">Turn on</button>
+    </div>
+    <script>
+        function changeImg(){
+            let text = document.getElementById("btn");
+            let img = document.getElementById("bulbimg");
+            // console.log(text);
+            if (text.textContent.includes("on")){
+                img.src="/bulb on.png";
+                text.textContent = "Turn off";
+                text.style.color = "black";
+                text.style.backgroundColor="darkgray"
+                text.style.borderColor="black";
+            }
+            else{
+                img.src="/bulb off.jpg";
+                text.textContent = "Turn on";
+                text.style.color = "gold";
+                text.style.backgroundColor= "black";
+                text.style.borderColor="darkgray";
+            }
+        }
+    </script>
+    <!-- <button id="btn" onclick="bodyMsg()">Click Here</button> -->
+    <!-- <script>
+        function bodyMsg(){
+            alert("Hello JavaScript! from body");
+            headMsg();
+        }
+    </script> -->
+</body>
+</html>

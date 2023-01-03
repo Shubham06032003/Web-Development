@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in java script</title>
+</head>
+<body>
+    <script>
+        // let lect = 10;
+        // let section = 3;
+        // let title = "Java Script";
+
+        // const course = {
+        //     lect : 10,
+        //     section : 3,
+        //     title : "Java Script",
+        //     note: {
+        //         introduction : "Welcome to Java Script"
+        //     },
+        //     enroll(){
+        //         console.log("You are Sucessfully Enroll");
+        //     }
+        // }
+        // course.enroll();
+        // console.log(course);
+        // course.prize = 999;
+
+        // title = prompt("Give a Title")
+        // Factory function
+        // function createCourse(title){
+        //     return{
+        //         title: title,
+        //         enroll(){
+        //             console.log("You are Sucessfully enroll")
+        //         }
+        //     }
+        // }
+
+        // const course = createCourse(title);
+        // console.log(course);
+        // course.enroll();
+        
+
+        // Constructor function
+
+        // function Course(Title){
+        //     this.title = Title,
+        //     this.enroll = function(){
+        //         console.log("You are Sucessfully Enrolled")
+        //     }
+        // }
+
+        // const course = new Course(title);
+        // course.enroll();
+        // delete course.title;
+        // course.CheakEnrollment = function(){
+        //     console.log("30 users are Enrolled")
+        // }
+        // console.log(course)
+
+        // Primitive datatype 
+
+        // let num = 10;
+
+        // // Pass by Value
+        // let num2 = num;
+        // num = 15;
+        // console.log(num);
+        // console.log(num2);
+
+        // Referance Datatype
+        // let obj = {num :10};
+        // Pass by Referance
+        // let obj2 = obj;
+        
+        // obj.num = 15;
+
+        // console.log(obj)
+        // console.log(obj2)
+
+        // const course = {
+        //     title : "Java Script",
+        //     enroll(){
+        //         console.log("You are Sucessfully enrolled")
+        //     }
+        // }
+
+        // const course2 = {...course}
+        // course2.title = "Python";
+        
+        const course = {
+            title : "Java Script",
+            enroll(){
+                console.log("You are Sucessfully enrolled")
+            }
+        }
+
+        // const course2  = Object.assign({},course)
+        // course2.title = "Python";
+
+
+        // for(let key in course){
+        //     console.log(key,course[key]);
+        // }
+
+        // for(let key of Object.keys(course)){
+        //     console.log(key,course[key]);
+        // }
+
+        const course2 = {};
+        for(let key of Object.keys(course)){
+            course2[key] = course[key] 
+        }
+    </script>
+</body>
+</html>

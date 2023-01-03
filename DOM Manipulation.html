@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            display: block;
+            background-color: black;
+        }
+        #bulb{
+            width: 250px;
+            height: 250px;
+            margin-left: 390px;
+        }
+        #btn{
+            margin: 20px;
+            margin-left: 460px;
+            font-size: larger;
+            color: gold;
+            background-color: rebeccapurple;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="bulb off.jpg" alt="This is an bulb Image" id="bulb">
+    <button id="btn">
+        Turn On
+    </button>
+    <script>
+        // function callMe(){
+        //     alert("Thanks for Watching")
+        // }
+        // // btn.onclick = callMe;
+        // btn.addEventListener('click',callMe);
+        
+        let btn = document.getElementById("btn");
+        let bulb = document.getElementById("bulb");
+        btn.addEventListener('click', bulbOn);
+
+        function bulbOn(e){
+            if (btn.textContent.includes('On')){
+                bulb.src ="bulb on.png"
+                btn.textContent = "Turn Off"
+                btn.style.color = "black"
+            }
+            else{
+                bulb.src = "bulb off.jpg"
+                btn.textContent = "Turn On"    
+                btn.style.color = "gold"
+            }
+        }
+    </script>
+</body>
+</html>

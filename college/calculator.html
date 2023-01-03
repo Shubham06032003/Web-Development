@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class="calbody">
+        <form action="" name="calbody">
+            
+            <input type="text" name="numpad" id="numpad" placeholder="Enter Number">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <input id="mul" class="div"  type="button" value="/" onclick="calbody.numpad.value+='/'">
+                    </td>
+                    <td colspan="2">
+                        <input type="button" value="*" class="mul" id="mul" onclick="calbody.numpad.value+='*'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <input id="button" type="button" value="7" onclick="calbody.numpad.value+='7'">
+                    </td>
+                    <td>
+                        <input id="button" type="button" value="8" onclick="calbody.numpad.value+='8'">
+                    </td>
+                    <td>
+                        <input id="button" type="button" value="9" onclick="calbody.numpad.value+='9'">
+                    </td>
+                    <td rowspan="2">
+                        <input id="add" class="add" type="button" value="+" onclick="calbody.numpad.value+='+'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="button" class="button" type="button" value="4" onclick="calbody.numpad.value+='4'">
+                    </td>
+                    <td>
+                        <input id="button" class="button" type="button" value="5" onclick="calbody.numpad.value+='5'">
+                    </td>
+                    <td>
+                        <input id="button" class="button" type="button" value="6" onclick="calbody.numpad.value+='6'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="button" class="button" type="button" value="1" onclick="calbody.numpad.value+='1'">
+                    </td>
+                    <td>
+                        <input id="button" class="button" type="button" value="2" onclick="calbody.numpad.value+='2'">
+                    </td>
+                    <td>
+                        <input id="button" class="button" type="button" value="3" onclick="calbody.numpad.value+='3'">
+                    </td>
+                    <td rowspan="2">
+                        <input id="sub" class="sub" type="button" value="-" onclick="calbody.numpad.value+='-'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="button" class="button" type="button" value="0" onclick="calbody.numpad.value+='0'">
+                    </td>
+                    <td>
+                        <input id="button" class="button" type="button" value="." onclick="calbody.numpad.value+='.'">
+                    </td>
+                    <td>
+                        <input id="button" class="button" type="button" value="C" onclick="calbody.numpad.value=''">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input id="eql" class="button" type="button" value="=" onclick="calbody.numpad.value=eval(calbody.numpad.value)">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!-- <script src="calculator.js"></script> -->
+</body>
+</html>

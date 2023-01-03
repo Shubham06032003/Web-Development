@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>My Profile</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+        nav{
+            background-color: aqua;
+            margin: 3px;
+            border-radius: 15px;
+        }
+        .home a{
+            display:inline-block;
+            text-decoration: none;
+            padding: 30px;
+            color: orangered;
+            font-size: larger;
+            padding-left: 120px;
+        }
+        
+        #MyImage{
+            padding: 10px;
+            /* padding-top: 80px; */
+            /* padding-left: 500px; */
+            text-align: center;
+            /* align-items: center; */
+            border: 2px solid orangered;
+            border-radius: 50%;
+        }
+
+        button{
+            padding: 15px;
+            margin: 15px;
+            width: 150px;
+            font-size: larger;
+            text-align: center;
+            /* margin-left: 500px; */
+            /* align-items: center; */
+            text-align: center;
+            border-style: double;
+            color: red;
+            /* background-color: black; */
+            border-radius: 10px;
+            
+        }
+        p{
+            padding: 20px;
+            text-align: center;
+            font-size: large;
+            color: crimson;
+            border:  1px solid limegreen;
+            border-radius: 15px;
+        }
+        #Image img{
+            padding: 35px;
+            border:  3px solid rebeccapurple;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+        }
+
+        #Project{
+            padding: 30px;
+            padding-left: 600px;
+            text-decoration: none;
+        }
+
+        #Contect{
+            padding: 50px;
+            text-align: center;
+        }
+        #Contect p{
+            padding: 50px;
+        }
+        a{
+
+            padding: 20px;
+            text-decoration: none;
+            /* padding-block: 15px; */
+        }
+        #i{
+          align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <nav class="home">
+                <a href="#">Home</a>
+                <a href="#">Clint Review</a>
+                <a href="#">More Info</a>
+            </nav>
+        </tr>
+        <tr>
+            <img id="MyImage" src="img.jpeg" alt="--- My Image ---">
+        </tr>
+        <tr>
+            <button>
+                Hire Me
+            </button>
+        </tr>
+        <tr id="Intro">
+            <p> 
+                When Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit dolore placeat dolorem perferendis libero praesentium laboriosam hic itaque ea aperiam ipsum perspiciatis qui natus eaque in, neque fugiat ad ipsa quaerat debitis officiis aspernatur. Iure, minima consequatur? Impedit, obcaecati aliquam velit porro suscipit quos enim earum animi est consequuntur cumque odio deleniti possimus dicta nostrum ratione. Corrupti pariatur fugiat quaerat similique enim quod aliquid neque voluptatem porro odit. Distinctio laboriosam, esse reprehenderit itaque vel tempore. Doloribus explicabo voluptate corporis necessitatibus distinctio repudiandae iusto dolor incidunt consequuntur, itaque deserunt tempora fuga id porro voluptas esse aliquid facere excepturi? Fuga, accusamus.
+
+            </p>
+        </tr>̥
+        <tr id="Image">
+            <td>
+                <img src="Calculator.png" alt="--- This is an Image ---">
+            </td>
+            <td>
+                <img src="SnakeGame.png"  alt="--- This is an Image ---">
+            </td>
+            <td>
+                <img src="Liquid.png"  alt="--- This is an Image ---">
+            </td>
+        </tr>
+        <tr id="Image">
+            <td colspan="2">
+                <img id="i" src="Clock.png"  alt="--- This is an Image ---">
+            </td>
+            <td>
+                <img id="i" src="Project Image.png"  alt="--- This is an Image ---">
+            </td>
+        </tr>
+        <tr>
+            <a id="Project" href="#">My Projects</a>
+        </tr>
+    </table>
+
+    <table id="Contect">
+        <tr>
+            <p>
+                Contact Me
+            </p>
+        </tr>
+        <tr>
+            <a class="sm" href="#">Facebook</a>
+            <a class="sm" href="#">Insta</a>
+            <a class="sm" href="#">Linkedin</a>
+        </tr>
+    </table>
+</body>
+</html>

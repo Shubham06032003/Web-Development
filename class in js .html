@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes in java script</title>
+</head>
+<body>
+    <script>
+        // class product{
+        //     constructor (itemName,price,discount,itmeCode) {
+        //         this.itemName = itemName;
+        //         this.price = price;
+        //         this.discount = discount;
+        //         this.itmeCode = itmeCode;
+        //     }
+        // }
+        
+        // let pencil = new product("Pencil",10,5,'p10');
+        
+        class product{
+            constructor (itemName) {
+                this.itemName = itemName;
+            }
+            
+            getItemName(){
+                return `${this.itemName} is a product`;
+            }
+        }
+        
+        class furniture extends product{
+            constructor (itemName) {
+                super(itemName);
+            }
+            
+            getItemName(){
+                return `${this.itemName} is a Furnitue`;
+            }
+        }
+
+        let pencil = new product("Pencil");
+        let chair = new furniture("Chair");
+
+        // const product2 = class product{
+        //     constructor (itemName,price,discount,itmeCode) {
+        //         this.itemName = itemName;
+        //         this.price = price;
+        //         this.discount = discount;
+        //         this.itmeCode = itmeCode;
+        //     }
+
+        //     get getDiscount(){
+        //         return this.discount;
+        //     }
+        //     set setDiscount(Value){
+        //         this.discount = Value;
+        //     }
+        // }
+
+
+        // let pencil = new product2("Pencil",10,5,'p10');
+    </script>    
+</body>
+</html>

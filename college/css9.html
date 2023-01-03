@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            padding-right: 50px;
+            /* border: 1px solid black; */
+        }
+        li{
+            text-align: center;
+            width: 150px;
+            list-style: none;
+            padding: 10px;
+        }
+        li:hover ,.btn{
+            background-color: lightgray;
+        }
+        a{
+            text-decoration: none;
+        }
+        #first{
+            background-color: yellowgreen;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .btn{
+            border: none;
+            background-color: white;
+            color: rebeccapurple;
+        }
+
+        .content{
+            display: none;
+            position: absolute;
+            z-index: 5;
+        }
+        .hide{
+            display: block;
+            background-color: white;
+        }
+        .hide:hover{
+            background-color: antiquewhite;
+        }
+        .dropdown:hover .content{
+            position: relative;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <li id="first">
+            <a  href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">news</a>
+        </li>
+        <li>
+            <a href="#">content us</a>
+        </li>
+        <li>
+            <a href="#">About us</a>
+        </li>
+        <li>
+            <div class="dropdown">
+                <button class="btn">More</button>
+                <div class="content">
+                    <a class="hide" href="#">link 1</a>
+                    <a class="hide" href="#">link 2</a>
+                    <a class="hide" href="#">link 3</a>
+                </div>
+            </div>
+        </li>
+    </div>
+</body>
+</html>

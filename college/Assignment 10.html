@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .body{
+            text-align: center;
+            border: 2px solid black;
+            width: 550px;
+        }
+        table{
+            margin: 20px;
+            margin-left: 50px;
+        }
+        button{
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <h2>
+            Visitor Information
+        </h2>
+        <hr>
+        <table border="1">
+            <tr>
+                <td>
+                    <h3>
+                        Email Address :
+                    </h3>
+                </td>
+                <td>
+                    <input type="email" name="Email" id="Email" placeholder="E-mail">
+                </td>
+            </tr>
+            <tr class="row">
+                <td>
+                    <h3>
+                        Do you use the web for :
+                    </h3>
+                </td>
+                <td>
+                    <input type="checkbox" name="Research" id="Research">
+                    <h4>
+                        Research
+                    </h4>
+                    <input type="checkbox" name="Purchases" id="Purchases">
+                    <h4>
+                        Purchases
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Occupation :</h4>
+                </td>
+                <td>
+                    <select name="Occupation" id="Occupation">
+                        <option value="">--- Select One ---</option>
+                        <option value="">teaching</option>
+                        <option value="">Bussiness</option>
+                        <option value="">Doctor</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Want us to send you junk E-mail ?</h4>
+                </td>h
+                <td>
+                    <input type="radio" name="Absolutely" id="Absolutely">
+                    <h4>Absolutely</h4>
+                    <input type="radio" name="No Way" id="No Way">
+                    <h4>No way</h4>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button>Submit</button>
+                    <button>Reset</button>
+                </td>
+                <hr>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+</head>
+<body>
+    <script>
+        const product = {
+            itemName : "Oreo",
+            price : 30,
+            discount : 10,
+            itemCode : "f2001"
+        };
+
+        function createProduct(name,price,discount,itemCode){
+            return{
+                itemName : name,
+                price : price,
+                discount : discount,
+                itemCode : itemCode
+            };
+        }
+
+        const productfunc = createProduct(product.itemName,product.price,product.discount,product.itemCode);
+        console.log(productfunc);
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom mainpulation</title>
+</head>
+<body>
+    <button id="btn">
+        Click Here
+    </button>
+    <!-- <ul id="First">
+        <li class="FirstList">First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ul>
+    <button id="FirstBtn">
+        Click me
+    </button>
+    <table>
+        <tr>
+            <td>
+                One
+            </td>
+            <td>
+                Two
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Three
+            </td>
+            <td>
+                Four
+            </td>
+        </tr>
+    </table> -->
+    <script>
+         // root node 
+        // console.log(document.documentElement);
+        // console.log(document.head);
+        // console.log(document.body);
+
+        // Childerns
+        // console.log(document.body.childNodes);
+        // console.log(document.body.children);
+        // console.log(document.body.firstChild);
+        // console.log(document.body.lastChild);
+        // console.log(document.body.firstElementChild);
+        // console.log(document.body.lastElementChild);
+
+        // siblings
+        // const ulTag = document.body.children[0];
+        // console.log(ulTag);
+        // const liTag = ulTag.children[1].textContent;
+        // console.log(liTag);
+
+        // for table tag
+        // const table = document.body.children[1];
+        // console.log(table);
+
+        // Id Search
+        // const ulTag = document.getElementById("First");
+        // ulTag.style.color = "red"
+        // console.log(ulTag);
+
+        // Class Search
+        // const liTag = document.getElementsByClassName("FirstList")
+        // console.log(liTag);
+        
+        // Creating and Removing the node element
+        // const newBtn = document.createElement("button")
+        // const newDiv = document.createElement("div")
+        // const text = document.createTextNode("Click Here")
+        // newDiv.innerHTML =`<li class="FirstList">First</li>
+        // <li>Second</li>
+        // <li>Third</li>`
+        // document.body.append(newDiv)
+        // newBtn.appendChild(text)
+        // document.body.append(newBtn)
+        // document.body.prepend(newBtn)
+        // document.body.before(newBtn)
+        // document.body.after(newBtn)
+        // FirstBtn.replaceWith(newBtn)
+        // FirstBtn.remove() 
+
+        // Events
+        // function click(){
+        //     console.log(this);
+        //     alert("Hello Guys")
+        // }
+
+        // btn.addEventListener('click',click)
+    </script>
+
+    <!-- Task 1 -->
+    <!-- <script>
+        const user = prompt("Enter any text :");
+        const newHead = document.createElement("h1");
+        const newHead2 = document.createElement("h2");
+        const text = document.createTextNode(user);
+        document.body.append(newHead);
+        document.body.append(newHead2);
+        newHead2.append(text)
+        // newHead2.remove();
+        // newHead.append(text)
+    </script> -->
+
+</body>
+</html>

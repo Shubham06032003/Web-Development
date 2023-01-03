@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 15</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <p>
+            Create a new :
+           <select name="Paper" id="Paper">
+            <option value="Assignment">Assignment</option>
+            <option value="Test">Test</option>
+            <option value="Paper">Paper</option>
+           </select>
+        </p>
+        <button type="submit">Submit</button>
+    </div><hr>
+    <div>
+        <p>
+            Assignment Title : 
+            <input type="text" name="title" id="title">
+        </p>
+        <div style="display: flex;">
+            <p>
+                Start Date : 
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                at : 
+                <input type="time" name="time" id="time">
+            </p>
+        </div>
+        <div style="display: flex;">
+            <p>
+                Due Date : 
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                at : 
+                <input type="time" name="time" id="time">
+            </p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta praesentium accusantium exercitationem reiciendis! Facere reprehenderit repudiandae, eum ea repellat obcaecati amet, excepturi velit dicta dolorem eius culpa ab alias?
+        </p>
+        <p>
+            <p>
+                Enter Spical Instructions (Optional):
+            </p>
+            <textarea name="Instruction" id="Instruction" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            Genrate Original Report for submission :
+            <select name="sub" id="sub">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+        </p><hr>
+        <p>
+            Genrate Original Report for Student submission:
+            <select name="sub" id="sub">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+        </p>
+        <p>
+            Allow students to see original report:
+            <select name="sub" id="sub">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+        </p>
+        <p>
+            Allow submission after due date:
+            <select name="sub" id="sub">
+                <option value="no">no</option>
+                <option value="yes">yes</option>
+            </select>
+        </p>
+        <p>
+            Allow other papers to be checked against Submission:
+            <select name="sub" id="sub">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+        </p>
+        <table>
+            <tr>
+                <td rowspan="3">
+                    Compare submission against these search targets:
+                </td>
+                <td>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    Students paper database
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    Current and Achived internet
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    Periodical , journals & publication
+                </td>
+            </tr>
+        </table>
+        <p>
+            Would you like to save these option as your defaults for future Assignment
+            <select name="sub" id="sub">
+                <option value="no">no</option>
+                <option value="yes">yes</option>
+            </select>
+        </p>
+    </div>
+</body>
+</html>
